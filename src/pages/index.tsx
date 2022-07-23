@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import About from "../components/About";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
@@ -25,6 +26,25 @@ const Home: NextPage = () => {
         <Header />
         <About />
         <Work />
+        <div className="fixed bottom-16 flex flex-col gap-8 right-24">
+          <a href="mailto:prateek_soni@outlook.com">
+            <FiMail className="hover:text-emerald-400 h-6 w-6" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/prateeksoni47/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FiLinkedin className="hover:text-emerald-400 h-6 w-6" />
+          </a>
+          <a
+            href="https://github.com/prateeksonii"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FiGithub className="hover:text-emerald-400 h-6 w-6" />
+          </a>
+        </div>
       </main>
     </>
   );
